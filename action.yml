@@ -3,7 +3,7 @@ author: "Udara Lakshan"
 description: "Generates a feed for a podcast from a YAML file"
 runs: 
   using: "docker"
-  images: "Dockerfile"
+  image: "Dockerfile"
 branding:
   icon: "git-branch"
   color: "red"
