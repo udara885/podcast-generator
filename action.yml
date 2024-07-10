@@ -1,0 +1,17 @@
+name: "Podcast Generator"
+author: "Udara Lakshan"
+description: "Generates a feed for a podcast from a YAML file"
+runs: 
+  using: "docker"
+  images: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email: The commiter's email address
+  required: true
+  default: ${{ github.actor}}@localhost
+name:
+  description: The committer's name
+  required: true
+  default: ${{ github.actor }}
